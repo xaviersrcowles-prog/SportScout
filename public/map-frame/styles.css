@@ -1,0 +1,41 @@
+html,
+body,
+#map {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.facility-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 2px solid white;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+.facility-marker.selected {
+  width: 34px;
+  height: 34px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.facility-marker span {
+  transform: rotate(45deg);
+  font-size: 12px;
+}
+
+.access-public { background: #2e7d32; }
+.access-restricted { background: #f9a825; }
+.access-members_only { background: #6a1b9a; }
+.access-private { background: #c62828; }
+.access-unknown { background: #616161; }
+
+.leaflet-control-attribution {
+  font-size: 10px;
+}
